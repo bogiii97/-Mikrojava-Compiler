@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.SemanticAnalyzer"/>
+    <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.Tab"/>
+    <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.concepts.Struct"/>
+    <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.visitors.SymbolTableVisitor"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.MySymbolTableVisitor"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.MJParserTest"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ArrDeclarationlListComma"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.MatDeclarationListComma"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.MatDesignator"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.MethodDecl"/>
+    <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.concepts.Obj"/>
+    <fullyQualifiedTypeName name="rs.etf.pp1.mj.runtime.Code"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.MyTab"/>
+</qualifiedTypeNameHistroy>

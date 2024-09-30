@@ -1,0 +1,10 @@
+program MJProgram
+ 
+	int a, b;
+{
+	void main() int x; char y; bool z; {
+		read(x);
+		read(y);
+		print(x);
+	}
+}

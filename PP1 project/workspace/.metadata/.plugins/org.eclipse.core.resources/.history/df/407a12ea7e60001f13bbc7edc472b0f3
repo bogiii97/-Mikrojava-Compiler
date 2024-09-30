@@ -1,0 +1,10 @@
+program MJProgram
+ 
+	int a, b;
+{
+	void main() int x[]; {
+		x = new int [3];
+		x[0] = 25;
+		print(x[0]);	
+	}
+}

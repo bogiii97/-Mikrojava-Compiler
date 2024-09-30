@@ -1,0 +1,36 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Scope;
+import rs.etf.pp1.symboltable.concepts.Struct;
+
+public class MyTab extends Tab {
+	public static final Struct boolType = new Struct(Struct.Bool);
+	public static final Struct intArrayType = new Struct(Struct.Array, intType);
+	public static final Struct boolArrayType = new Struct(Struct.Array, boolType);
+	public static final Struct charArrayType = new Struct(Struct.Array, charType);
+	
+	//Potencijalno izvesti klasu iz klase Struct i dodati novo polje Matrix i onda kreirati strukturu u formi new Struct(Struct.Matrix, intType);
+	public static final Struct intMatType = new Struct(Struct.Array, new Struct(Struct.Array, intType));
+	public static final Struct charMatType = new Struct(Struct.Array, new Struct(Struct.Array, charType));
+	public static final Struct boolMatType = new Struct(Struct.Array, new Struct(Struct.Array, boolType));
+	
+	
+	public static Obj find1(String name) {
+		Obj resultObj = null;
+		Obj curr = null;
+		for (Scope s = currentScope; s != null; s = s.getOuter()) {
+			if (s.getLocals() != null) {
+				curr = s.getLocals().searchKey("MJProgram");
+				for(Obj o: curr.getLocalSymbols()) {
+					if(o.getName().equals(name)) {
+						resultObj = o;
+					}
+				}
+				if (resultObj != null) break;
+			}
+		}
+		return (resultObj != null) ? resultObj : noObj;
+	}
+}

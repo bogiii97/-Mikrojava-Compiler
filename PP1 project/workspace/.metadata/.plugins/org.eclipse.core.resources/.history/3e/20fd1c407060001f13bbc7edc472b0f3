@@ -1,0 +1,213 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+
+parser code {:
+
+	boolean errorDetected;
+
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    // slede redefinisani metodi za prijavu gresaka radi izmene teksta poruke
+     
+    public void report_fatal_error(String message, Object info) throws java.lang.Exception {
+      done_parsing();
+      report_error(message, info);
+    }
+  
+    public void syntax_error(Symbol cur_token) {
+        report_error("\nSintaksna greska", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti", cur_token);
+    }
+
+    public void report_error(String message, Object info) {
+    	errorDetected = true;
+    	StringBuilder msg = new StringBuilder(message); 
+    	if (info instanceof Symbol)
+            msg.append (" na liniji ").append(((Symbol)info).left);
+        log.error(msg.toString());
+    }
+
+
+:}
+
+init with {:
+	errorDetected = false;
+:}
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info(s.toString() + " " + s.value.toString());
+	return s;
+:}
+
+
+
+terminal PROG, CONST, NEW, PRINT, READ, NAMESPACE;
+terminal PLUS, MINUS, MUL, DIV, MOD, EQUAL, INC, DEC, SEMI, COMMA, LPAREN, RPAREN, LBRACE, RBRACE, LBRACKET, RBRACKET ;
+terminal Integer NUMBER ;
+terminal Integer BOOL ;
+terminal String IDENT ;
+terminal Character CHAR ;
+ 
+nonterminal DeclList, ConstDecl, VarDecl, ConstDeclList, VarDeclList, VarList, SingleVar, SingleConst;
+nonterminal StatementList, Statement, DesignatorStatement, Assignop, Mulop, Addop;
+nonterminal StaticDesignator, DesignatorArray, StatementAlt, DesignatorName, FirstBrackets, SecondBrackets;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodName, MethodDecl;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Designator, Expr, Factor, AddopTermList, Term;
+
+Program ::= (ProgramWithMain) ProgName DeclList LBRACE MethodDecl RBRACE
+			|
+			(ProgramWithoutMain) ProgName DeclList LBRACE RBRACE
+			;
+			
+ProgName ::= (ProgName) PROG IDENT:progName;
+
+MethodDecl ::= (MethodDecl) MethodName LPAREN RPAREN VarDeclList LBRACE StatementList RBRACE;
+
+MethodName ::= (MethodName) IDENT:methType IDENT:methName;
+
+DeclList ::= (DeclListConst) DeclList ConstDecl
+			|
+			(DeclListVar) DeclList VarDecl
+			|
+			(NoDeclList) /* epsilon */
+			;
+			
+ConstDecl ::= (ConstDeclNumber) CONST Type ConstDeclList SEMI;
+ 
+ConstDeclList ::= (Consts) ConstDeclList COMMA SingleConst
+			|  
+			(OneConst) SingleConst
+			;
+			
+SingleConst ::= (ConstNumber) IDENT:number EQUAL NUMBER
+			|
+			(ConstChar) IDENT:character EQUAL CHAR
+			|
+			(ConstBoolean) IDENT:bolean EQUAL BOOL
+			;
+
+VarDecl ::= (VarDeclarations) Type VarList SEMI
+			|		
+			error SEMI:r
+			{: parser.report_error("Nevalidna deklaracija globalnih promenljivih. Izvršen oporavak do ; u liniji " + rleft, null); :}	
+			|
+			error COMMA:l
+			{: parser.report_error("Nevalidna deklaracija globalnih promenljivih. Izvršen oporavak do , u liniji " + lleft, null); :}	
+			;
+
+VarList ::= (Vars) VarList COMMA SingleVar
+			|
+			(OneVar) SingleVar
+			;
+
+SingleVar ::= (VarName) IDENT:varName 
+			|
+			(ArrName) IDENT:arrName LBRACKET RBRACKET
+			|
+			(MatName) IDENT:matName LBRACKET RBRACKET LBRACKET RBRACKET
+			;
+			
+VarDeclList ::= (DeclarationList) VarDeclList VarDecl
+			|
+			(NoDeclarationlList) /* epsilon */
+			;
+ 
+Type ::= 	(Type) IDENT:type;	
+
+
+StatementList ::= (StmtList) StatementList Statement
+			|
+			(NoStmtList) /* epsilon */
+			;
+
+Statement ::= (Stmt) StatementAlt SEMI
+			|
+			error SEMI:l
+			{: parser.report_error("Nevalidna dodela vrednosti. Izvršen oporavak do ; u liniji " + lleft, null); :}
+			;
+
+StatementAlt ::= (DesignatorStmt) DesignatorStatement
+			| 
+			(ReadStmt) READ LPAREN Designator RPAREN
+			|
+			(PrintOneStmt) PRINT LPAREN Expr RPAREN
+			;			
+
+			
+DesignatorStatement ::= (EqualStmt) Designator EQUAL Expr
+			|
+			(IncStmt) Designator INC
+			|
+			(DecStmt) Designator DEC
+			;
+
+
+Expr ::= (PlusExpr) AddopTermList;
+			
+AddopTermList ::= (OneTerm) Term
+			|
+			(MinusTerm) MINUS Term
+			|
+			(AddopTerms) AddopTermList PLUS Term
+			|
+			(MinopTerms) AddopTermList MINUS Term
+			;
+
+Term ::= (OneFactor) Factor
+			|
+			(MulopFactors) Term Mulop Factor
+			;
+
+Factor ::= (NumberFactor) NUMBER 
+			|
+			(CharFactor) CHAR
+			|
+			(ExprFactor) LPAREN Expr RPAREN
+			|
+			(BoolFactor) BOOL
+			|
+			(DesignatorFactor) Designator
+			|
+			(NewFactorArr) NEW Type LBRACKET Expr RBRACKET
+			|
+			(NewFactorMat) NEW Type LBRACKET Expr RBRACKET LBRACKET Expr RBRACKET
+			;
+
+
+Designator ::= (ArrDesignator) DesignatorName LBRACKET Expr RBRACKET
+			| 
+			(VarDesignator) IDENT:var
+			|
+			(MatDesignator) DesignatorName LBRACKET Expr RBRAKET LBRACKET Expr RBRACKET
+			;
+
+
+DesignatorName ::= (DesignatorName) IDENT:name;
+
+
+
+Assignop ::= (Equal) EQUAL;
+
+Addop ::= (Add) PLUS
+			|
+		  (Minus) MINUS
+		    ;
+
+Mulop ::= (Mul)	MUL
+			|
+		  (Div) DIV
+			|
+		  (Mod) MOD
+			;
+

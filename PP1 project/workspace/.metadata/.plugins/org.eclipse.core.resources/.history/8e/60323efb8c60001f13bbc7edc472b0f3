@@ -1,0 +1,12 @@
+program MJProgram
+ 
+	int a, b;
+{
+	void main() int x[]; {
+		x = new int [7];
+		x[5] = 25;
+		x[5]--;
+		x[4] = x[5];
+		print(x[4]);	
+	}
+}

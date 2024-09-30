@@ -1,0 +1,478 @@
+INFO  13:25:27,454 - Compiling source file: C:\Users\Win 10\OneDrive - student.etf.bg.ac.rs\Desktop\PP1 project\workspace\MJCompiler\test\test.mj
+INFO  13:25:27,489 - #2 program
+INFO  13:25:27,490 - #25 test301
+INFO  13:25:27,490 - #19 {
+INFO  13:25:27,491 - #25 void
+INFO  13:25:27,491 - #25 main
+INFO  13:25:27,491 - #17 (
+INFO  13:25:27,492 - #18 )
+INFO  13:25:27,493 - #25 int
+INFO  13:25:27,493 - #25 a
+INFO  13:25:27,494 - #21 [
+INFO  13:25:27,494 - #22 ]
+INFO  13:25:27,494 - #15 ;
+INFO  13:25:27,494 - #25 int
+INFO  13:25:27,495 - #25 b
+INFO  13:25:27,495 - #21 [
+INFO  13:25:27,495 - #22 ]
+INFO  13:25:27,495 - #21 [
+INFO  13:25:27,495 - #22 ]
+INFO  13:25:27,495 - #15 ;
+INFO  13:25:27,496 - #19 {
+INFO  13:25:27,496 - #25 a
+INFO  13:25:27,497 - #12 =
+INFO  13:25:27,498 - #4 new
+INFO  13:25:27,498 - #25 int
+INFO  13:25:27,498 - #21 [
+INFO  13:25:27,498 - #23 2
+INFO  13:25:27,498 - #22 ]
+INFO  13:25:27,499 - #15 ;
+INFO  13:25:27,500 - #25 a
+INFO  13:25:27,501 - #21 [
+INFO  13:25:27,503 - #23 0
+INFO  13:25:27,503 - #22 ]
+INFO  13:25:27,503 - #12 =
+INFO  13:25:27,503 - #23 5
+INFO  13:25:27,503 - #15 ;
+INFO  13:25:27,504 - #25 a
+INFO  13:25:27,504 - #21 [
+INFO  13:25:27,504 - #23 1
+INFO  13:25:27,504 - #22 ]
+INFO  13:25:27,504 - #12 =
+INFO  13:25:27,504 - #23 3
+INFO  13:25:27,505 - #15 ;
+INFO  13:25:27,505 - #25 b
+INFO  13:25:27,505 - #12 =
+INFO  13:25:27,505 - #4 new
+INFO  13:25:27,505 - #25 int
+INFO  13:25:27,505 - #21 [
+INFO  13:25:27,505 - #23 2
+INFO  13:25:27,505 - #22 ]
+INFO  13:25:27,505 - #21 [
+INFO  13:25:27,505 - #23 2
+INFO  13:25:27,506 - #22 ]
+INFO  13:25:27,506 - #15 ;
+INFO  13:25:27,506 - #25 b
+INFO  13:25:27,506 - #21 [
+INFO  13:25:27,506 - #23 0
+INFO  13:25:27,506 - #22 ]
+INFO  13:25:27,506 - #21 [
+INFO  13:25:27,508 - #23 0
+INFO  13:25:27,508 - #22 ]
+INFO  13:25:27,509 - #12 =
+INFO  13:25:27,511 - #23 7
+INFO  13:25:27,511 - #15 ;
+INFO  13:25:27,511 - #25 b
+INFO  13:25:27,512 - #21 [
+INFO  13:25:27,512 - #23 0
+INFO  13:25:27,512 - #22 ]
+INFO  13:25:27,512 - #21 [
+INFO  13:25:27,512 - #23 1
+INFO  13:25:27,512 - #22 ]
+INFO  13:25:27,512 - #12 =
+INFO  13:25:27,512 - #23 8
+INFO  13:25:27,512 - #15 ;
+INFO  13:25:27,512 - #25 a
+INFO  13:25:27,512 - #12 =
+INFO  13:25:27,512 - #25 b
+INFO  13:25:27,513 - #21 [
+INFO  13:25:27,513 - #23 0
+INFO  13:25:27,513 - #22 ]
+INFO  13:25:27,513 - #15 ;
+INFO  13:25:27,513 - #5 print
+INFO  13:25:27,513 - #17 (
+INFO  13:25:27,514 - #25 a
+INFO  13:25:27,514 - #21 [
+INFO  13:25:27,514 - #23 0
+INFO  13:25:27,514 - #22 ]
+INFO  13:25:27,514 - #18 )
+INFO  13:25:27,515 - #15 ;
+INFO  13:25:27,515 - #5 print
+INFO  13:25:27,515 - #17 (
+INFO  13:25:27,515 - #25 a
+INFO  13:25:27,515 - #21 [
+INFO  13:25:27,515 - #23 1
+INFO  13:25:27,515 - #22 ]
+INFO  13:25:27,515 - #18 )
+INFO  13:25:27,515 - #15 ;
+INFO  13:25:27,515 - #20 }
+INFO  13:25:27,515 - #20 }
+INFO  13:25:27,525 - ProgramWithMain(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoDeclList(
+  ) [NoDeclList]
+  MethodDecl(
+    MethodName(
+     void
+     main
+    ) [MethodName]
+    DeclarationList(
+      DeclarationList(
+        NoDeclarationlList(
+        ) [NoDeclarationlList]
+        VarDeclarations(
+          Type(
+           int
+          ) [Type]
+          OneVar(
+            ArrName(
+             a
+            ) [ArrName]
+          ) [OneVar]
+        ) [VarDeclarations]
+      ) [DeclarationList]
+      VarDeclarations(
+        Type(
+         int
+        ) [Type]
+        OneVar(
+          MatName(
+           b
+          ) [MatName]
+        ) [OneVar]
+      ) [VarDeclarations]
+    ) [DeclarationList]
+    StmtList(
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              StmtList(
+                StmtList(
+                  StmtList(
+                    StmtList(
+                      NoStmtList(
+                      ) [NoStmtList]
+                      Stmt(
+                        DesignatorStmt(
+                          EqualStmt(
+                            VarDesignator(
+                             a
+                            ) [VarDesignator]
+                            Expr(
+                              OneTerm(
+                                OneFactor(
+                                  NewFactorArr(
+                                    Type(
+                                     int
+                                    ) [Type]
+                                    Expr(
+                                      OneTerm(
+                                        OneFactor(
+                                          NumberFactor(
+                                           2
+                                          ) [NumberFactor]
+                                        ) [OneFactor]
+                                      ) [OneTerm]
+                                    ) [Expr]
+                                  ) [NewFactorArr]
+                                ) [OneFactor]
+                              ) [OneTerm]
+                            ) [Expr]
+                          ) [EqualStmt]
+                        ) [DesignatorStmt]
+                      ) [Stmt]
+                    ) [StmtList]
+                    Stmt(
+                      DesignatorStmt(
+                        EqualStmt(
+                          ArrDesignator(
+                            DesignatorName(
+                             a
+                            ) [DesignatorName]
+                            Expr(
+                              OneTerm(
+                                OneFactor(
+                                  NumberFactor(
+                                   0
+                                  ) [NumberFactor]
+                                ) [OneFactor]
+                              ) [OneTerm]
+                            ) [Expr]
+                          ) [ArrDesignator]
+                          Expr(
+                            OneTerm(
+                              OneFactor(
+                                NumberFactor(
+                                 5
+                                ) [NumberFactor]
+                              ) [OneFactor]
+                            ) [OneTerm]
+                          ) [Expr]
+                        ) [EqualStmt]
+                      ) [DesignatorStmt]
+                    ) [Stmt]
+                  ) [StmtList]
+                  Stmt(
+                    DesignatorStmt(
+                      EqualStmt(
+                        ArrDesignator(
+                          DesignatorName(
+                           a
+                          ) [DesignatorName]
+                          Expr(
+                            OneTerm(
+                              OneFactor(
+                                NumberFactor(
+                                 1
+                                ) [NumberFactor]
+                              ) [OneFactor]
+                            ) [OneTerm]
+                          ) [Expr]
+                        ) [ArrDesignator]
+                        Expr(
+                          OneTerm(
+                            OneFactor(
+                              NumberFactor(
+                               3
+                              ) [NumberFactor]
+                            ) [OneFactor]
+                          ) [OneTerm]
+                        ) [Expr]
+                      ) [EqualStmt]
+                    ) [DesignatorStmt]
+                  ) [Stmt]
+                ) [StmtList]
+                Stmt(
+                  DesignatorStmt(
+                    EqualStmt(
+                      VarDesignator(
+                       b
+                      ) [VarDesignator]
+                      Expr(
+                        OneTerm(
+                          OneFactor(
+                            NewFactorMat(
+                              Type(
+                               int
+                              ) [Type]
+                              Expr(
+                                OneTerm(
+                                  OneFactor(
+                                    NumberFactor(
+                                     2
+                                    ) [NumberFactor]
+                                  ) [OneFactor]
+                                ) [OneTerm]
+                              ) [Expr]
+                              Expr(
+                                OneTerm(
+                                  OneFactor(
+                                    NumberFactor(
+                                     2
+                                    ) [NumberFactor]
+                                  ) [OneFactor]
+                                ) [OneTerm]
+                              ) [Expr]
+                            ) [NewFactorMat]
+                          ) [OneFactor]
+                        ) [OneTerm]
+                      ) [Expr]
+                    ) [EqualStmt]
+                  ) [DesignatorStmt]
+                ) [Stmt]
+              ) [StmtList]
+              Stmt(
+                DesignatorStmt(
+                  EqualStmt(
+                    MatDesignator(
+                      DesignatorName(
+                       b
+                      ) [DesignatorName]
+                      FirstBrackets(
+                        Expr(
+                          OneTerm(
+                            OneFactor(
+                              NumberFactor(
+                               0
+                              ) [NumberFactor]
+                            ) [OneFactor]
+                          ) [OneTerm]
+                        ) [Expr]
+                      ) [FirstBrackets]
+                      SecondBrackets(
+                        Expr(
+                          OneTerm(
+                            OneFactor(
+                              NumberFactor(
+                               0
+                              ) [NumberFactor]
+                            ) [OneFactor]
+                          ) [OneTerm]
+                        ) [Expr]
+                      ) [SecondBrackets]
+                    ) [MatDesignator]
+                    Expr(
+                      OneTerm(
+                        OneFactor(
+                          NumberFactor(
+                           7
+                          ) [NumberFactor]
+                        ) [OneFactor]
+                      ) [OneTerm]
+                    ) [Expr]
+                  ) [EqualStmt]
+                ) [DesignatorStmt]
+              ) [Stmt]
+            ) [StmtList]
+            Stmt(
+              DesignatorStmt(
+                EqualStmt(
+                  MatDesignator(
+                    DesignatorName(
+                     b
+                    ) [DesignatorName]
+                    FirstBrackets(
+                      Expr(
+                        OneTerm(
+                          OneFactor(
+                            NumberFactor(
+                             0
+                            ) [NumberFactor]
+                          ) [OneFactor]
+                        ) [OneTerm]
+                      ) [Expr]
+                    ) [FirstBrackets]
+                    SecondBrackets(
+                      Expr(
+                        OneTerm(
+                          OneFactor(
+                            NumberFactor(
+                             1
+                            ) [NumberFactor]
+                          ) [OneFactor]
+                        ) [OneTerm]
+                      ) [Expr]
+                    ) [SecondBrackets]
+                  ) [MatDesignator]
+                  Expr(
+                    OneTerm(
+                      OneFactor(
+                        NumberFactor(
+                         8
+                        ) [NumberFactor]
+                      ) [OneFactor]
+                    ) [OneTerm]
+                  ) [Expr]
+                ) [EqualStmt]
+              ) [DesignatorStmt]
+            ) [Stmt]
+          ) [StmtList]
+          Stmt(
+            DesignatorStmt(
+              EqualStmt(
+                VarDesignator(
+                 a
+                ) [VarDesignator]
+                Expr(
+                  OneTerm(
+                    OneFactor(
+                      DesignatorFactor(
+                        ArrDesignator(
+                          DesignatorName(
+                           b
+                          ) [DesignatorName]
+                          Expr(
+                            OneTerm(
+                              OneFactor(
+                                NumberFactor(
+                                 0
+                                ) [NumberFactor]
+                              ) [OneFactor]
+                            ) [OneTerm]
+                          ) [Expr]
+                        ) [ArrDesignator]
+                      ) [DesignatorFactor]
+                    ) [OneFactor]
+                  ) [OneTerm]
+                ) [Expr]
+              ) [EqualStmt]
+            ) [DesignatorStmt]
+          ) [Stmt]
+        ) [StmtList]
+        Stmt(
+          PrintOneStmt(
+            Expr(
+              OneTerm(
+                OneFactor(
+                  DesignatorFactor(
+                    ArrDesignator(
+                      DesignatorName(
+                       a
+                      ) [DesignatorName]
+                      Expr(
+                        OneTerm(
+                          OneFactor(
+                            NumberFactor(
+                             0
+                            ) [NumberFactor]
+                          ) [OneFactor]
+                        ) [OneTerm]
+                      ) [Expr]
+                    ) [ArrDesignator]
+                  ) [DesignatorFactor]
+                ) [OneFactor]
+              ) [OneTerm]
+            ) [Expr]
+          ) [PrintOneStmt]
+        ) [Stmt]
+      ) [StmtList]
+      Stmt(
+        PrintOneStmt(
+          Expr(
+            OneTerm(
+              OneFactor(
+                DesignatorFactor(
+                  ArrDesignator(
+                    DesignatorName(
+                     a
+                    ) [DesignatorName]
+                    Expr(
+                      OneTerm(
+                        OneFactor(
+                          NumberFactor(
+                           1
+                          ) [NumberFactor]
+                        ) [OneFactor]
+                      ) [OneTerm]
+                    ) [Expr]
+                  ) [ArrDesignator]
+                ) [DesignatorFactor]
+              ) [OneFactor]
+            ) [OneTerm]
+          ) [Expr]
+        ) [PrintOneStmt]
+      ) [Stmt]
+    ) [StmtList]
+  ) [MethodDecl]
+) [ProgramWithMain]
+INFO  13:25:27,526 - ===================================
+INFO  13:25:27,533 - Obradjuje se funkcija main na liniji 6
+INFO  13:25:27,533 - Deklarisan niz 'a' na liniji 7
+INFO  13:25:27,534 - Objektni čvor: Kind: 1, Name: a, Adr: 0, Level: 1
+INFO  13:25:27,534 - Deklarisana matrica 'b' na liniji 8
+INFO  13:25:27,534 - Objektni čvor: Kind: 1, Name: b, Adr: 1, Level: 1
+INFO  13:25:27,535 - Detektovana promenljiva 'a' na liniji 10
+INFO  13:25:27,535 - Objektni čvor: Kind: 1, Name: a, Adr: 0, Level: 1
+INFO  13:25:27,535 - Objektni čvor: Kind: 1, Name: a, Adr: 0, Level: 1
+INFO  13:25:27,535 - Detektovan niz 'a' na liniji 11
+INFO  13:25:27,535 - Objektni čvor: Kind: 1, Name: a, Adr: 0, Level: 1
+INFO  13:25:27,535 - Detektovan niz 'a' na liniji 12
+INFO  13:25:27,535 - Detektovana promenljiva 'b' na liniji 13
+INFO  13:25:27,536 - Objektni čvor: Kind: 1, Name: b, Adr: 1, Level: 1
+INFO  13:25:27,536 - Objektni čvor: Kind: 1, Name: b, Adr: 1, Level: 1
+INFO  13:25:27,536 - Detektovana matrica 'b' na liniji 14
+INFO  13:25:27,536 - Objektni čvor: Kind: 1, Name: b, Adr: 1, Level: 1
+INFO  13:25:27,536 - Detektovana matrica 'b' na liniji 15
+INFO  13:25:27,536 - Detektovana promenljiva 'a' na liniji 16
+INFO  13:25:27,537 - Objektni čvor: Kind: 1, Name: a, Adr: 0, Level: 1
+INFO  13:25:27,537 - Objektni čvor: Kind: 1, Name: b, Adr: 1, Level: 1
+INFO  13:25:27,537 - Detektovan niz 'b' na liniji 16
+INFO  13:25:27,537 - Objektni čvor: Kind: 1, Name: a, Adr: 0, Level: 1
+INFO  13:25:27,537 - Detektovan niz 'a' na liniji 17
+INFO  13:25:27,537 - Objektni čvor: Kind: 1, Name: a, Adr: 0, Level: 1
+INFO  13:25:27,538 - Detektovan niz 'a' na liniji 18
+INFO  13:25:27,538 - ===================================
+INFO  13:25:27,543 - Parsiranje uspešno završeno!

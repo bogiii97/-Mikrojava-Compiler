@@ -1,0 +1,13 @@
+program MJProgram
+ 
+	int a, b;
+{
+	void main() int x; char y; bool z; {
+		read(x);
+		read(y);
+		read(z);
+		print(x+1);
+		print(y);
+		print(z);
+	}
+}

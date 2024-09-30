@@ -1,0 +1,235 @@
+INFO  13:09:05,517 - Compiling source file: C:\Users\Win 10\OneDrive - student.etf.bg.ac.rs\Desktop\PP1 project\workspace\MJCompiler\test\test.mj
+INFO  13:09:05,555 - #2 program
+INFO  13:09:05,555 - #25 test301
+INFO  13:09:05,556 - #19 {
+INFO  13:09:05,560 - #25 void
+INFO  13:09:05,561 - #25 main
+INFO  13:09:05,561 - #17 (
+INFO  13:09:05,564 - #18 )
+INFO  13:09:05,564 - #25 int
+INFO  13:09:05,565 - #25 a
+INFO  13:09:05,566 - #21 [
+INFO  13:09:05,567 - #22 ]
+INFO  13:09:05,567 - #16 ,
+INFO  13:09:05,568 - #25 b
+INFO  13:09:05,569 - #15 ;
+INFO  13:09:05,569 - #19 {
+INFO  13:09:05,570 - #25 b
+INFO  13:09:05,572 - #12 =
+INFO  13:09:05,572 - #23 2
+INFO  13:09:05,572 - #15 ;
+INFO  13:09:05,574 - #25 a
+INFO  13:09:05,575 - #12 =
+INFO  13:09:05,583 - #4 new
+INFO  13:09:05,583 - #25 int
+INFO  13:09:05,583 - #21 [
+INFO  13:09:05,583 - #23 4
+INFO  13:09:05,583 - #22 ]
+INFO  13:09:05,583 - #15 ;
+INFO  13:09:05,584 - #25 a
+INFO  13:09:05,584 - #21 [
+INFO  13:09:05,585 - #23 0
+INFO  13:09:05,586 - #22 ]
+INFO  13:09:05,586 - #12 =
+INFO  13:09:05,586 - #23 5
+INFO  13:09:05,586 - #15 ;
+INFO  13:09:05,586 - #25 a
+INFO  13:09:05,587 - #21 [
+INFO  13:09:05,587 - #23 1
+INFO  13:09:05,587 - #22 ]
+INFO  13:09:05,587 - #12 =
+INFO  13:09:05,587 - #23 7
+INFO  13:09:05,587 - #15 ;
+INFO  13:09:05,588 - #5 print
+INFO  13:09:05,588 - #17 (
+INFO  13:09:05,588 - #25 b
+INFO  13:09:05,588 - #16 ,
+INFO  13:09:05,589 - #23 1
+INFO  13:09:05,589 - #18 )
+INFO  13:09:05,589 - #15 ;
+INFO  13:09:05,589 - #20 }
+INFO  13:09:05,589 - #20 }
+INFO  13:09:05,598 - ProgramWithMain(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoDeclList(
+  ) [NoDeclList]
+  MethodDecl(
+    MethodName(
+     void
+     main
+    ) [MethodName]
+    DeclarationList(
+      NoDeclarationlList(
+      ) [NoDeclarationlList]
+      VarDeclarations(
+        Type(
+         int
+        ) [Type]
+        Vars(
+          OneVar(
+            ArrName(
+             a
+            ) [ArrName]
+          ) [OneVar]
+          VarName(
+           b
+          ) [VarName]
+        ) [Vars]
+      ) [VarDeclarations]
+    ) [DeclarationList]
+    StmtList(
+      StmtList(
+        StmtList(
+          StmtList(
+            StmtList(
+              NoStmtList(
+              ) [NoStmtList]
+              Stmt(
+                DesignatorStmt(
+                  EqualStmt(
+                    VarDesignator(
+                     b
+                    ) [VarDesignator]
+                    Expr(
+                      OneTerm(
+                        OneFactor(
+                          NumberFactor(
+                           2
+                          ) [NumberFactor]
+                        ) [OneFactor]
+                      ) [OneTerm]
+                    ) [Expr]
+                  ) [EqualStmt]
+                ) [DesignatorStmt]
+              ) [Stmt]
+            ) [StmtList]
+            Stmt(
+              DesignatorStmt(
+                EqualStmt(
+                  VarDesignator(
+                   a
+                  ) [VarDesignator]
+                  Expr(
+                    OneTerm(
+                      OneFactor(
+                        NewFactorArr(
+                          Type(
+                           int
+                          ) [Type]
+                          Expr(
+                            OneTerm(
+                              OneFactor(
+                                NumberFactor(
+                                 4
+                                ) [NumberFactor]
+                              ) [OneFactor]
+                            ) [OneTerm]
+                          ) [Expr]
+                        ) [NewFactorArr]
+                      ) [OneFactor]
+                    ) [OneTerm]
+                  ) [Expr]
+                ) [EqualStmt]
+              ) [DesignatorStmt]
+            ) [Stmt]
+          ) [StmtList]
+          Stmt(
+            DesignatorStmt(
+              EqualStmt(
+                ArrDesignator(
+                  DesignatorName(
+                   a
+                  ) [DesignatorName]
+                  Expr(
+                    OneTerm(
+                      OneFactor(
+                        NumberFactor(
+                         0
+                        ) [NumberFactor]
+                      ) [OneFactor]
+                    ) [OneTerm]
+                  ) [Expr]
+                ) [ArrDesignator]
+                Expr(
+                  OneTerm(
+                    OneFactor(
+                      NumberFactor(
+                       5
+                      ) [NumberFactor]
+                    ) [OneFactor]
+                  ) [OneTerm]
+                ) [Expr]
+              ) [EqualStmt]
+            ) [DesignatorStmt]
+          ) [Stmt]
+        ) [StmtList]
+        Stmt(
+          DesignatorStmt(
+            EqualStmt(
+              ArrDesignator(
+                DesignatorName(
+                 a
+                ) [DesignatorName]
+                Expr(
+                  OneTerm(
+                    OneFactor(
+                      NumberFactor(
+                       1
+                      ) [NumberFactor]
+                    ) [OneFactor]
+                  ) [OneTerm]
+                ) [Expr]
+              ) [ArrDesignator]
+              Expr(
+                OneTerm(
+                  OneFactor(
+                    NumberFactor(
+                     7
+                    ) [NumberFactor]
+                  ) [OneFactor]
+                ) [OneTerm]
+              ) [Expr]
+            ) [EqualStmt]
+          ) [DesignatorStmt]
+        ) [Stmt]
+      ) [StmtList]
+      Stmt(
+        PrintDoubleStmt(
+          Expr(
+            OneTerm(
+              OneFactor(
+                DesignatorFactor(
+                  VarDesignator(
+                   b
+                  ) [VarDesignator]
+                ) [DesignatorFactor]
+              ) [OneFactor]
+            ) [OneTerm]
+          ) [Expr]
+         1
+        ) [PrintDoubleStmt]
+      ) [Stmt]
+    ) [StmtList]
+  ) [MethodDecl]
+) [ProgramWithMain]
+INFO  13:09:05,599 - ===================================
+INFO  13:09:05,604 - Obradjuje se funkcija main na liniji 6
+INFO  13:09:05,604 - Deklarisan niz 'a' na liniji 7
+INFO  13:09:05,605 - Objektni čvor: Kind: 1, Name: a, Adr: 0, Level: 1
+INFO  13:09:05,605 - Deklarisana promenljiva 'b' na liniji 7
+INFO  13:09:05,605 - Objektni čvor: Kind: 1, Name: b, Adr: 1, Level: 1
+INFO  13:09:05,605 - Detektovana promenljiva 'b' na liniji 9
+INFO  13:09:05,606 - Objektni čvor: Kind: 1, Name: b, Adr: 1, Level: 1
+INFO  13:09:05,606 - Detektovana promenljiva 'a' na liniji 10
+INFO  13:09:05,606 - Objektni čvor: Kind: 1, Name: a, Adr: 0, Level: 1
+INFO  13:09:05,606 - Objektni čvor: Kind: 1, Name: a, Adr: 0, Level: 1
+INFO  13:09:05,607 - Detektovan niz 'a' na liniji 11
+INFO  13:09:05,607 - Objektni čvor: Kind: 1, Name: a, Adr: 0, Level: 1
+INFO  13:09:05,607 - Detektovan niz 'a' na liniji 12
+INFO  13:09:05,607 - Detektovana promenljiva 'b' na liniji 13
+INFO  13:09:05,607 - Objektni čvor: Kind: 1, Name: b, Adr: 1, Level: 1
+ERROR 13:09:05,607 - Parametar print funkcije sa dva parametra mora biti nizovskog tipa! Greška na liniji 13
+INFO  13:09:05,608 - ===================================
+ERROR 13:09:05,609 - Parsiranje NIJE uspešno završeno!

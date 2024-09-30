@@ -1,0 +1,16 @@
+// Test301
+
+program test301
+	
+{
+	void main()	
+		int a[], b;
+	{
+		a = new int[4];
+		a[0] = 5;
+		a[1] = 7;
+		print(b,1);
+	}
+}
+
+
